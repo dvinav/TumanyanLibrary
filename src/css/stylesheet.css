@@ -1,0 +1,52 @@
+@font-face {
+    font-family: yekan;
+    src: url(../resources/fonts/yekan.ttf);
+}
+
+* {
+    outline: none;
+    font-family: yekan;
+    user-select: none;
+}
+
+.LinkToList, .LinkToList:visited {
+    color: rgb(63, 63, 63);
+    font-size: 35px;
+    margin-top: 120px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px !important;
+    transition: 0.2s all ease-out;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.tt {
+    font-size: 30px;
+}
+
+nav {
+    z-index: 999;
+}
+
+input[type="submit"] {
+    color: white;
+    font-family: yekan;
+    padding: 8px;
+}
+
+.title {
+    overflow: hidden;
+}
+
+body {
+    overflow-x: hidden
+}
+
+table {
+    opacity: 0;
+    transform: translateX(150px);
+    transition: 0.5s ease-out;
+}

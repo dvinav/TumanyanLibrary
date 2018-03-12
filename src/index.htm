@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>کتابخانه</title>
+        <link rel="icon" href="resources/favicon.png">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="libraries/materializecss/materialize.min.css">
+        <script src="libraries/jquery/jquery-3.2.1.js"></script>
+        <script src="libraries/materializecss/materialize.min.js"></script>
+    </head>
+    <body onload="fade()">
+        <nav class="teal z-depth-3 darken-2">
+            <div class="nav-wrapper" style="text-align:center">
+                <a class="title tt center-aligned">دبیرستان های کانانیان - کاتارینیان</a>
+            </div>
+        </nav>
+        <ul class="center-align">
+            <li><a onclick="fadeEffect('tsnoghner')" class="LinkToList waves-effect waves-teal">اولیا</a></li>
+            <li><a onclick="fadeEffect('kananian')" class="LinkToList waves-effect waves-teal">دبیرستان کانانیان</a></li>
+            <li><a onclick="fadeEffect('katarinian')" class="LinkToList waves-effect waves-teal">دبیرستان کاتارینیان</a></li>
+        </ul>
+        <div class="row">
+
+    </div>
+    </body>
+    <script>
+        function fadeEffect(loc) {
+            $(".LinkToList").css({
+                'transition': '0.2s all ease-in',
+                "transform": "translateX(-50px)",
+                "opacity": 0
+            })
+            setTimeout(function(){location.href = loc}, 300)
+        }
+
+        function fade() {
+            $(".LinkToList").css({
+                "transform": "translateX(0px)",
+                "opacity": 1
+            })}
+    </script>
+</html>
